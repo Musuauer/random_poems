@@ -7,9 +7,9 @@ export default function Poems (props) {
         <div key={poem.week}
           className='poem'
         >
-        <div className='poem-week'>
-          <h1>Week: {poem.week}</h1>
-        </div>
+          <div className='poem-week'>
+            <h1>Week: {poem.week}</h1>
+          </div>
           <div className='poem-title'>
             <p>{poem.title}</p>
           </div>

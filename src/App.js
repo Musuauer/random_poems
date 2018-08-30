@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import allPoems from './allPoems'
-import Poems from './Poems'
+import Poems from './poems'
 
 class App extends Component {
   state = {
