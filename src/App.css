@@ -6,3 +6,22 @@
   margin: 0;
   padding: 0;
 }
+.App{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poem{
+  width: auto;
+}
+.poem-week{
+  margin-top: 5rem;
+}
+.poem-title{
+  margin: 2rem 0;
+}
+p{
+  font-size: 1.3rem;
+}

@@ -7,11 +7,14 @@ export default function Poems (props) {
         <div key={poem.week}
           className='poem'
         >
+        <div className='poem-week'>
+          <h1>Week: {poem.week}</h1>
+        </div>
           <div className='poem-title'>
-            {poem.title}
+            <p>{poem.title}</p>
           </div>
           <div className='poem-body'>
-            <p>{poem.text.join(<br />)}</p>
+            {poem.text.map((line, i) => <p key={i}>{line}</p>)}
           </div>
         </div>
       )}

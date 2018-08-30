@@ -15,17 +15,18 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <header className='App-header'>
+        {/* <header className='App-header'>
 
           <h1 className='App-title'>I'm still here</h1>
-        </header>
-        <p className='App-intro'>
+        </header> */}
+        {/* <p className='App-intro'>
         Project timeline: Monday, Jan 2. 2017- Sunday, Dec 31. 2018
-        Artists: Guillermo Gudiño and Georgia Wall
-
-        Poetry:
-
+          <br />
+        Artists:
+          <br /> Guillermo Gudiño and Georgia Wall
+          <br />
         Structure:
+          <br />
         Monday artist 1 writes artist 2 a line of poetry using WhatsApp
         Tuesday artist 2 responds by adding another line to the poem
         This continues; artists alternating adding a line to the poem each day of the week
@@ -39,7 +40,7 @@ class App extends Component {
         The first line of the poem becomes the title of the poem
         The titles of the poem will act as our guidelines for the poem's content
         The titles should also take into consideration the title’s previous poems and may act as a link or overarching conversation between the artists
-        </p>
+        </p> */}
 
         <Poems
           allPoems={this.state.allPoems} />
