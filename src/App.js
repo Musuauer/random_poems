@@ -1,25 +1,67 @@
 import React, { Component } from 'react'
 import './App.css'
 import allPoems from './allPoems'
-import Poems from './poems'
+// import Poems from './Poems'
+import OnePoem from './OnePoem'
+import RandomButton from './RandomButton'
+import LeftButton from './LeftButton'
+import RightButton from './RightButton'
 
 class App extends Component {
   state = {
-    allPoems: []
+    allPoems: [],
+    currentPoem: {}
   }
 
   componentDidMount = () => {
-    this.setState({ allPoems })
+    this.setState(
+      { allPoems },
+      () => this.shuffleNow()
+    )
   }
 
-  render () {
-    return (
-      <div className='App'>
-        {/* <header className='App-header'>
+  shuffleNow = () => {
+    const allPoemsCopy = this.state.allPoems.slice(0)
+    const shuffledPoems = this.shuffle(allPoemsCopy)
+    console.log('shuffled', allPoemsCopy)
+    console.log('all', this.state.allPoems)
+    this.setState({ currentPoem: shuffledPoems[24] })
+  }
+
+ shuffle = (array) => {
+   let currentIndex = array.length
+   let temporaryValue, randomIndex
+
+   while (currentIndex !== 0) {
+     randomIndex = Math.floor(Math.random() * currentIndex)
+     currentIndex -= 1
+     temporaryValue = array[currentIndex]
+     array[currentIndex] = array[randomIndex]
+     array[randomIndex] = temporaryValue
+   }
+   return array
+ }
+
+ nextLeft = () => {
+   const currentNumber = this.state.currentPoem.week
+   const decreasedNumber = currentNumber - 2
+   const nextPoem = this.state.allPoems[decreasedNumber]
+   this.setState({ currentPoem: nextPoem })
+ }
+ nextRight = () => {
+   const currentNumber = this.state.currentPoem.week
+   const nextPoem = this.state.allPoems[currentNumber]
+   this.setState({ currentPoem: nextPoem })
+ }
+
+ render () {
+   return (
+     <div className='App'>
+       {/* <header className='App-header'>
 
           <h1 className='App-title'>I'm still here</h1>
         </header> */}
-        {/* <p className='App-intro'>
+       {/* <p className='App-intro'>
         Project timeline: Monday, Jan 2. 2017- Sunday, Dec 31. 2018
           <br />
         Artists:
@@ -42,12 +84,29 @@ class App extends Component {
         The titles should also take into consideration the title’s previous poems and may act as a link or overarching conversation between the artists
         </p> */}
 
-        <Poems
-          allPoems={this.state.allPoems} />
+       {/* <Poems
+         allPoems={this.state.allPoems}
+         /> */}
 
-      </div>
-    )
-  }
+       <OnePoem
+         currentPoem={this.state.currentPoem}
+       />
+
+       <RandomButton
+         shuffleNow={this.shuffleNow}
+       />
+
+       <LeftButton
+         nextLeft={this.nextLeft}
+       />
+
+       <RightButton
+         nextRight={this.nextRight}
+       />
+
+     </div>
+   )
+ }
 }
 
 export default App

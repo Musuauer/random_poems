@@ -3,6 +3,7 @@ import React from 'react'
 export default function Poems (props) {
   return (
     <div className='poems-list'>
+      {console.log(props.allPoems)}
       {props.allPoems.map(poem =>
         <div key={poem.week}
           className='poem'
