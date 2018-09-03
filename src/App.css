@@ -17,7 +17,7 @@
   align-items: center;
 }
 .one-poem{
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
 .poem-week{
   text-align: center;
@@ -26,14 +26,17 @@
   margin: 14vh 0 2rem 0;
 }
 h1{
-  font-size: 2.4rem;
+  font-size: 2rem;
+}
+h2{
+  font-size: 1rem;
 }
 h3{
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 p{
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .random-button{
@@ -43,17 +46,41 @@ p{
   background-color: black;
   color: white;
   cursor: pointer;
+  display: none;
 }
 .left-button{
   position: absolute;
   left: 0;
   top: 50vh;
   cursor: pointer;
+  display: none;
 }
 .right-button{
   position: absolute;
   right: 0;
   top: 50vh;
+  cursor: pointer;
+  display: none;
+}
+
+/* ----MODAL---- */
+
+.modal{
+  position: absolute;
+  top: 14vh;
+  left: 0;
+  background: white;
+  padding-bottom: 3rem;
+}
+.App-title{
+ margin-bottom: 3rem;
+}
+.info-button{
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3rem;
   cursor: pointer;
 }
 
@@ -63,5 +90,18 @@ p{
   }
   p, h3{
     font-size: 1.3rem;
+  }
+  .modal{
+    top: 2rem;
+    right: 0;
+    height: 80vh;
+    overflow: scroll;
+  }
+  .info-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    margin-bottom: 0;
   }
 }
