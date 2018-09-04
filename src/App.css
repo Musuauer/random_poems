@@ -54,6 +54,7 @@ p{
   color: white;
   padding-bottom: 3rem;
   z-index: 9;
+  overflow: scroll;
 }
 .modal-content{
   width: 40%;
@@ -98,7 +99,6 @@ a:hover{
   .modal{
     top: 0;
     right: 0;
-    overflow: scroll;
   }
   .modal-content{
     width: 70%;
