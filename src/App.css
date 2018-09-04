@@ -92,6 +92,9 @@ a:hover{
   p, h3{
     font-size: 1.3rem;
   }
+  .one-poem{
+    margin-top: 10vh;
+  }
   .modal{
     top: 0;
     right: 0;
@@ -100,13 +103,13 @@ a:hover{
   .modal-content{
     width: 70%;
     margin-left: 1rem;
-    margin-top: 14vh;
+    margin-top: 10vh;
   }
   .info-button{
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 99;
+    padding: 2rem;
     margin-bottom: 0;
   }
 }
