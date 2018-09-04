@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import './App.css'
 import allPoems from './allPoems'
 import OnePoem from './OnePoem'
-import RandomButton from './RandomButton'
-import LeftButton from './LeftButton'
-import RightButton from './RightButton'
 import InfoWindow from './InfoWindow'
 
 class App extends Component {
@@ -25,8 +22,6 @@ class App extends Component {
   shuffleNow = () => {
     const allPoemsCopy = this.state.allPoems.slice(0)
     const shuffledPoems = this.shuffle(allPoemsCopy)
-    console.log('shuffled', allPoemsCopy)
-    console.log('all', this.state.allPoems)
     this.setState({ currentPoem: shuffledPoems[24] })
   }
 
@@ -60,6 +55,7 @@ class App extends Component {
    this.setState(prevState => ({
      showModal: !prevState.showModal
    }))
+   console.log('modal toggled')
  }
  render () {
    return (
@@ -72,34 +68,15 @@ class App extends Component {
        <div
          onClick={this.toggleModal}
          className='info-button'>
-         <h2>
-           {
-             !this.state.showModal
-               ? 'info'
-               : 'close'
-           }
-         </h2>
+         <h2>info</h2>
        </div>
 
        {
          this.state.showModal &&
          <InfoWindow
-           open={this.state.showModal}
+           toggleModal={this.toggleModal}
          />
        }
-
-
-       <RandomButton
-         shuffleNow={this.shuffleNow}
-       />
-
-       <LeftButton
-         nextLeft={this.nextLeft}
-       />
-
-       <RightButton
-         nextRight={this.nextRight}
-       />
 
      </div>
    )
