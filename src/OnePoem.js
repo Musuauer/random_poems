@@ -3,7 +3,6 @@ import React from 'react'
 export default function OnePoem (props) {
   return (
     <div className='one-poem'>
-      {console.log('onepoem', props.currentPoem)}
       {(props.currentPoem.week != null) &&
       (
         <div

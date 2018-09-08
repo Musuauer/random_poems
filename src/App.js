@@ -11,6 +11,7 @@ class App extends Component {
     showModal: false
   }
 
+  // load all poems from JSON file and shuffle them
   componentDidMount = () => {
     this.setState(
       { allPoems },
@@ -18,6 +19,7 @@ class App extends Component {
     )
   }
 
+  // shuffle a copy of the poems in state and set one (#25, the one in the middle) as the current poem
   shuffleNow = () => {
     const allPoemsCopy = this.state.allPoems.slice(0)
     const shuffledPoems = this.shuffle(allPoemsCopy)
@@ -38,24 +40,13 @@ class App extends Component {
    return array
  }
 
- nextLeft = () => {
-   const currentNumber = this.state.currentPoem.week
-   const decreasedNumber = currentNumber - 2
-   const nextPoem = this.state.allPoems[decreasedNumber]
-   this.setState({ currentPoem: nextPoem })
- }
- nextRight = () => {
-   const currentNumber = this.state.currentPoem.week
-   const nextPoem = this.state.allPoems[currentNumber]
-   this.setState({ currentPoem: nextPoem })
- }
-
+  //  show or hidde modal changing the state
  toggleModal = () => {
    this.setState(prevState => ({
      showModal: !prevState.showModal
    }))
-   console.log('modal toggled')
  }
+
  render () {
    return (
      <div className='App'
