@@ -16,7 +16,6 @@ class App extends Component {
       { allPoems },
       () => this.shuffleNow()
     )
-    window.addEventListener('click', this.shuffleNow)
   }
 
   shuffleNow = () => {
@@ -59,7 +58,8 @@ class App extends Component {
  }
  render () {
    return (
-     <div className='App'>
+     <div className='App'
+       onClick={this.shuffleNow}>
 
        <OnePoem
          currentPoem={this.state.currentPoem}
