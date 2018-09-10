@@ -90,6 +90,7 @@ a:hover{
 @media only screen and (max-width: 700px){
   .App{
     width: 90%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   p, h3{
     font-size: 1.3rem;
