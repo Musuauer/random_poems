@@ -76,11 +76,12 @@ p{
   right: 4rem;
   padding: 3rem;
   cursor: pointer;
+  text-decoration: underline;
 }
 a{
   color: white;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1.1rem;
 }
 a:hover{

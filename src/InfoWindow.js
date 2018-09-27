@@ -22,15 +22,15 @@ export default function InfoWindow (props) {
           <br />
         Structure:
           <br />
-        Monday... Guillermo writes Georgia a line of poetry using WhatsApp.
+        Monday... Guillermo Gudiño writes Georgia Wall a line of poetry using WhatsApp.
           <br />
-        Tuesday... Georgia responds by adding another line to the poem.
+        Tuesday... Georgia Wall responds by adding another line to the poem.
           <br />
         This continues; artists alternating adding a line to the poem each day of the week.
           <br />
         The 7-line poem ends on Sunday.
           <br />
-        Next Monday... Georgia will begin the next poem using the same structure as above.
+        Next Monday... Georgia Wall will begin the next poem using the same structure as above.
           <br />
           <br />
 
