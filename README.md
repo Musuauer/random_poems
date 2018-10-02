@@ -1,12 +1,12 @@
-## 50 poems
+# 50 poems
 
-# Artists:
+### Artists:
 Guillermo Gudiño and Georgia Wall
 
-# Project timeline:
+### Project timeline:
 Monday, Jan 2. 2017 - Sunday, Dec 31. 2018
 
-# Structure:
+### Structure:
 Monday... Guillermo Gudiño writes Georgia Wall a line of poetry using WhatsApp.
 Tuesday... Georgia Wall responds by adding another line to the poem.
 This continues; artists alternating adding a line to the poem each day of the week.
