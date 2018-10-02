@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
 }
+
 .App{
   position: relative;
   width: 80%;
@@ -16,6 +17,9 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+.poem, .info-button{
+  user-select: none;
 }
 .one-poem{
   margin-top: 15vh;
@@ -56,11 +60,12 @@ p{
   padding-bottom: 3rem;
   z-index: 9;
   overflow: scroll;
+  cursor: auto;
 }
 .modal-content{
-  width: 40%;
-  margin:  0 auto;
-  margin-top: 15vh;
+  width: 50%;
+  margin:  0 3rem;
+  margin-top: 5vh;
 }
 .white{
   color: white;

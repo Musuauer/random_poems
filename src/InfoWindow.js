@@ -39,15 +39,6 @@ export default function InfoWindow (props) {
         This means that not all poems will necessarily follow the 7-line structures.
           <br />
           <br />
-
-        Title:
-          <br />
-        The first line of the poem becomes the title of the poem.
-          <br />
-        The titles of the poem will act as our guidelines for the poem's content.
-          <br />
-        The titles should also take into consideration the title’s previous poems and may act as a link or overarching conversation between the artists.
-          <br />
         </p>
       </div>
       <div
