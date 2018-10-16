@@ -49,11 +49,11 @@ class App extends Component {
 
  render () {
    return (
-     <div className='App'
-       onClick={this.shuffleNow}>
+     <div className='App'>
 
        <OnePoem
          currentPoem={this.state.currentPoem}
+         onClick={this.shuffleNow}
        />
 
        <div
