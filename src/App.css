@@ -21,8 +21,10 @@
   user-select: none;
 }
 .one-poem{
-  margin-top: 15vh;
+  margin-top: 13vh;
   cursor: pointer;
+  box-sizing: border-box;
+  padding: 2rem;
 }
 .poem-week{
   text-align: center;

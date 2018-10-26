@@ -21,6 +21,7 @@ class App extends Component {
 
   // shuffle a copy of the poems in state and set one (#25, the one in the middle) as the current poem
   shuffleNow = () => {
+    console.log('it works')
     const allPoemsCopy = this.state.allPoems.slice(0)
     const shuffledPoems = this.shuffle(allPoemsCopy)
     this.setState({ currentPoem: shuffledPoems[24] })
@@ -53,7 +54,7 @@ class App extends Component {
 
        <OnePoem
          currentPoem={this.state.currentPoem}
-         onClick={this.shuffleNow}
+         shuffle={this.shuffleNow}
        />
 
        <div
