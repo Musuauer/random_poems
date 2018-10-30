@@ -4,7 +4,7 @@ export default function InfoWindow (props) {
   return (
     <div className='modal'>
       <div className='modal-content'>
-        <h1 className='App-title'>50 poems</h1>
+        <h1 className='App-title'>50 weeks</h1>
         <p className='App-intro'>
         Artists:
           <br />
