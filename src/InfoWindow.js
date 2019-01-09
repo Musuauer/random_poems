@@ -63,7 +63,7 @@ export default function InfoWindow (props) {
           </h2>
 
           <p>
-            “50 weeks” is a piece of Electronic Literature written by Georgia Wall and Guillermo Gudino. “50 weeks” is a series of collaborative poems produced over the course of a year, using the mobile app WhatsApp. Each poem was created over the course of a week with the two artists alternating to add one line a day in their chat. During the year in which “50 weeks” was written, the two artists, who have been collaborating since 2011, communicated solely through these poetry exchanges. When the project was completed in early 2018, the poems were transcribed and a website was built to house the collection.
+            “50 weeks” is a piece of Electronic Literature written by Georgia Wall and Guillermo Gudino. It is a series of collaborative poems produced over the course of a year, using the mobile app WhatsApp. Each poem was created over the course of a week with the two artists alternating to add one line a day in their chat. During the year in which “50 weeks” was written, the two artists, who have been collaborating since 2011, communicated solely through these poetry exchanges. When the project was completed in early 2018, the poems were transcribed and a website was built to house the collection.
           </p>
 
           <p>
