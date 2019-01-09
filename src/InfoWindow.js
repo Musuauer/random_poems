@@ -6,9 +6,9 @@ export default function InfoWindow (props) {
       <div className='modal-content'>
         <h1 className='App-title'>50 weeks</h1>
         <div className='App-intro'>
-          <p>
-            Artists:
-          </p>
+          <h2>
+            Artists
+          </h2>
 
           <p>
             <a href='https://guillermogudino.com/'>
@@ -18,17 +18,17 @@ export default function InfoWindow (props) {
             </a>
           </p>
 
-          <p>
-            Project timeline:
-          </p>
+          <h2>
+            Project timeline
+          </h2>
 
           <p>
             Monday, Jan 2. 2017 - Sunday, Dec 31. 2018
           </p>
 
-          <p>
-            Structure:
-          </p>
+          <h2>
+            Structure
+          </h2>
 
           <p>
             Monday... Guillermo Gudiño writes Georgia Wall a line of poetry using WhatsApp.
@@ -58,9 +58,9 @@ export default function InfoWindow (props) {
             This means that not all poems will necessarily follow the 7-line structures.
           </p>
 
-          <p>
-            Description:
-          </p>
+          <h2>
+            Description
+          </h2>
 
           <p>
             “50 weeks” is a piece of Electronic Literature written by Georgia Wall and Guillermo Gudino. “50 weeks” is a series of collaborative poems produced over the course of a year, using the mobile app WhatsApp. Each poem was created over the course of a week with the two artists alternating to add one line a day in their chat. During the year in which “50 weeks” was written, the two artists, who have been collaborating since 2011, communicated solely through these poetry exchanges. When the project was completed in early 2018, the poems were transcribed and a website was built to house the collection.
