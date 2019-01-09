@@ -74,7 +74,12 @@ p{
   z-index: 9999;
 }
 .App-title{
- margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+.App-intro p{
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 .info-button{
   margin-bottom: 2rem;
